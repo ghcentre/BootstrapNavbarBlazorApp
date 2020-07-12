@@ -11,7 +11,9 @@
 </head>
 
 <body>
-    <app>Loading...</app>
+    <app>
+        <div class="AppLoader">Loading...</div>
+    </app>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.
@@ -22,6 +24,15 @@
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        window.initNavMenu =
+            () =>
+                $('.navbar-nav > li a:not("[data-toggle]")').on(
+                    'click',
+                    () => $('.navbar-collapse').collapse('hide')
+                );
+    </script>
 </body>
 
 </html>
