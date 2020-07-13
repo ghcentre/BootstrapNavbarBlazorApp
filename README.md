@@ -2,9 +2,14 @@
 
 This is the _Blazor Webassembly_ Visual Studio template with the following changes:
 
-1. **Bootstrap** as client library;
-2. **jQuery** as client library;
+1. **Bootstrap** as client-side library;
+2. **jQuery** as client-side library;
 3. Bootstrap _Navbar_ instead of side navigation (sidebar) panel.
+
+## Installation and Use
+
+You may need to restore client-side libraries before first run. To do this, right-click on solution
+and select **Restore Client-Side Libraries** menu item.
 
 ## Collapse Breakpoint
 
